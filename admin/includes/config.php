@@ -4,13 +4,13 @@
 
 define('DB_HOST','localhost');
 
-define('DB_USER','root');
+// define('DB_USER','root');
 
-define('DB_PASS','');
+// define('DB_PASS','');
 
-// define('DB_USER','wonderpo_qv');
+define('DB_USER','wonderpo_qv');
 
-// define('DB_PASS','!UP!re}UJ[@j');
+define('DB_PASS','!UP!re}UJ[@j');
 
 define('DB_NAME','wonderpo_qvcontest');
 
