@@ -2,40 +2,39 @@
 include('include/header.php');
 ?>
 
-
-<div class="">
-  <div class="row m-0" style="height: 100vh;">
-    <div class="col-12 col-sm-12 col-md-6 col-lg-5 girl_div m-auto">
-      <div class="fit_content d-flex float-right">
-        <img class="float-right girl_image" src="assets/image/girl_2.png" alt="girl" />
-        <img class="mark1" id = "mark1"src="assets/image/mark_1.png" alt="mark_1" />
-        <img class="mark2" src="assets/image/mark_1.png" alt="mark_2" />
-        <img  class="mark3" src="assets/image/mark_1.png" alt="mark_3" />  
-        <img class="w-100 h-100 wave_img " src="assets/image/BG_wave.png" alt="wave">  
-      </div>      
+<div class="row m-0 index_div" style="height: 100vh">
+  <div class="col-12 col-sm-12 col-md-6 col-lg-5 girl_div m-auto" style="padding: 0">
+    <div class="fit_content d-flex float-right">
+      <img class="float-right girl_image" src="assets/image/girl_2.png" alt="girl" />      
     </div>
-    <div class="col-12 col-sm-10 col-md-6 col-lg-7 m-auto">
-      <div class="index5_text1 text-center mb-4">Tahniah! Anda semakin menghampiri peluang<br /> untuk memenangi hadiah wang tunai bernilai<br /> RM500 atau produk QV!</div>
-      <div class="text-center ml-md-5  text_div">
-        <div class="text_div2">
-          <div class="index5_text2 "> Hadiah Kod Baucar RM5 menanti di email anda. Sila isi butiran peribadi seterusnya.</div>
-          
-        </div>
-        <div>
-            <button type="button" id= "SETERUSNYA" class="btn btn-primary mt-5">SETERUSNYA</button>
-        </div>
-      </div>
-    </div>
-
+    <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">      
   </div>
+  <div class="col-12 col-sm-10 col-md-6 col-lg-7 m-auto">
+    <p class="index5_text1 text-center mb-5" style="color: #293D8A">Tahniah! Anda semakin menghampiri peluang<br /> untuk memenangi hadiah wang tunai bernilai<br /> RM500 atau produk QV!</p>
+    <p class="index5_text2 text-center mb-1" style="color: #293D8A"> Hadiah Kod Baucar RM5 menanti di email anda. <br /> Sila isi butiran peribadi seterusnya.</p>
+    <div class="text-center"> 
+     <a href ="pop.php">
+         <button type="button" id= "SETERUSNYA" class="btn btn-primary mt-5 btn-main">SETERUSNYA</button>
+      </a>
+    </div>
+  </div>
+</div>
 
+<div class="group_mobile_div py-3">
+  <p class="index5_text1 text-center my-5 px-3" style="color: #293D8A">Tahniah! Anda semakin menghampiri peluang untuk memenangi hadiah wang tunai bernilai RM500 atau produk QV!</p>
+  <p class="index5_text2 text-center mb-1 px-3" style="color: #293D8A"> Hadiah Kod Baucar RM5 menanti di email anda. Sila isi butiran peribadi seterusnya.</p>
+  <div class="text-center"> 
+  <a href ="pop.php">
+    <button type="button" id= "SETERUSNYA" class="btn btn-primary mt-5 btn-main">SETERUSNYA</button>
+  </a>
+  </div>
+  <div class="fit_content d-flex float-right">
+    <img class="float-right girl_image" src="assets/image/girl_cream_2.png" alt="girl" />    
+  </div>   
+  <img class="w-100 wave_img" src="assets/image/wave_mobile.png" alt="wave">
 </div>
 
 <script type="text/javascript">
-
-$("#SETERUSNYA").click(function(){
-  window.location.href = 'pop.php';
-});
 
   </script>
 
