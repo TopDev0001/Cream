@@ -305,6 +305,27 @@
     .video_play{
         height: 200px;
     }
+    .mark1{
+        height: 27px;
+        width: 27px;
+        position: absolute;
+        top: 113px;
+        right: 154px;
+    }
+    .mark2{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 96px;
+        right: 203px;
+    } 
+    .mark3{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        right: 173px;
+        top: 200px;
+    }
 }
 
 @media only screen and (max-width: 375px) {

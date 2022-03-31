@@ -50,7 +50,9 @@ include('include/header.php');
 </div>
 
 <div class="group_mobile_div py-3 text-center">
-
+<a href ="index5.php">
+          <button type="button" id= "MULA" class="btn btn-primary mt-3 btn-main" >MULA</button>
+        </a>
   <p class="home_text2 text-center mt-5 mb-3" style="color: #293D8A">Jom DRAG & DROP Sekarang!</p>
   <div class="row align-items-center justify-content-center mx-3">          
     <img class="mx-2 finger_image" src="assets/image/finger.png" alt="finger">                  
