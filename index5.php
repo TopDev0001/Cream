@@ -9,8 +9,8 @@ include('include/header.php');
     </div>
     <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">      
   </div>
-  <div class="col-12 col-sm-10 col-md-6 col-lg-7 m-auto">
-    <p class="index5_text1 text-center mb-5" style="color: #293D8A">Tahniah! Anda semakin menghampiri peluang<br /> untuk memenangi hadiah wang tunai bernilai<br /> RM500 atau produk QV!</p>
+  <div class="col-12 col-sm-10 col-md-6 col-lg-7 m-auto " style="padding-bottom: 100px">
+    <p class="index5_text1 text-center mb-4" style="color: #293D8A">Tahniah! Anda semakin menghampiri peluang<br /> untuk memenangi hadiah wang tunai bernilai<br /> RM500 atau produk QV!</p>
     <p class="index5_text2 text-center mb-1" style="color: #293D8A"> Hadiah Kod Baucar RM5 menanti di email anda. <br /> Sila isi butiran peribadi seterusnya.</p>
     <div class="text-center"> 
      <a href ="pop.php">

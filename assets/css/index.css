@@ -26,15 +26,21 @@
         height: 34px;
         width: 34px;
         margin-bottom: 10px;
+        background-image: url(../image/cream1.png);
+        background-size: cover;
     }
     .card2{
         height: 50px;
         width: 50px;
         margin-bottom: 10px;
+        background-image: url(../image/cream2.png);
+        background-size: cover;
     }
     .card3{
         height: 64px;
         width: 64px;
+        background-image: url(../image/cream3.png);
+        background-size: cover;
     }
     .first_page{
         background-image: url("../image/background.png") ;         
@@ -67,6 +73,7 @@
         position: absolute;
         top: 163px;
         right: 100px;
+        z-index: 999;
     }
     .mark2{
         height: 50px;
@@ -74,6 +81,7 @@
         position: absolute;
         top: 136px;
         right: 173px;
+        z-index: 999;
     } 
     .mark3{
         height: 64px;
@@ -81,6 +89,15 @@
         position: absolute;
         right: 128px;
         top: 290px;
+        z-index: 999;
+    }
+    .bg_image{
+        background-image: url("../image/mark_1.png") ; 
+        background-size: cover;
+    }
+    .select_image{
+        background-image: url("../image/mark_2.png") ; 
+        background-size: cover;
     }
     .fit_content {
         width: fit-content;
@@ -136,6 +153,7 @@
         width: 187px;
         height: 39px;
         color: white;
+
     }
     p{
         letter-spacing: 0.5px;
@@ -147,6 +165,7 @@
         box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
         border-radius: 24px;            
     }
+
     .formqv_video{
         background-image: url('../image/BG_video.png');
         background-size: cover;
@@ -215,13 +234,27 @@
         cursor: pointer;
     }
     .qvclass {
+        display: flex;
         background: #FAFDFF;
         border: 1px solid #FFFFFF;
         box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
         border-radius: 24px 24px 0px 0px;
         padding: 30px;
     }
-
+    .platform_first_line{
+        font-size:17px;
+        color:#293D8A;
+    }
+    .platform_second_line{
+        font-size:30px;
+        color:#293D8A;
+    }
+    .mobile_icon{
+        width: 60%;
+    }
+    .girl_div{
+        z-index: 12;
+    }
     
 @media only screen and (max-width: 768px) {
     .index_div{
@@ -326,6 +359,22 @@
         right: 173px;
         top: 200px;
     }
+    .platform_image{
+        width: 372px;;
+    }
+    .qvclass {
+        display: block;
+    }
+    .platform_first_line{
+       margin-top: 150px;
+       font-size:18px;
+       padding: 0px 25px;
+       letter-spacing: 0.1px;
+    }
+    .mobile_image{
+        width: 50%;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {

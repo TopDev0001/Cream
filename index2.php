@@ -47,13 +47,6 @@ include('include/header.php');
   </div>   
   <img class="w-100 wave_img" src="assets/image/wave_mobile.png" alt="wave">    
 </div>
-
-<script type="text/javascript">
-$("#SETERUSNYA").click(function(){
-  window.location.href = 'index3.php';
-});
-  </script>
-
 </body>
 
 </html>

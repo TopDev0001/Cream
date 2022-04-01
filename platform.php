@@ -9,43 +9,52 @@ error_reporting(0);
     <section class="pop_section">
         <div class="container bg-1">
             <div class="row text-center ">
-                <div class="col-sm-12 platform_text" style="margin-top: 30px;">
+                <div class="col-sm-12 mt-md-5" >
                     <div class="col-sm-12">
-                        <h6 class = "platform_first_line" > Anda telah berjaya menyertai Cabutan Bertuah Raya QV dan berpeluang
-                            memenangi</h6>
-                        <h2  class = "platform_second_line" >Hadiah Wang Tunai bernilai RM 500! </h2>
+                        <p class = "platform_first_line m-md-0" > Anda telah berjaya menyertai Cabutan Bertuah Raya QV dan berpeluang
+                            memenangi</p>
+                        <p  class = "platform_second_line px-5 px-md-0" >Hadiah Wang Tunai bernilai RM 500! </p>
                     </div>
                     <div class="platform_image_div" >
-                   <img src="img/platform.png" class="platform_image">
+                   <img src="assets/image/platform.png" class="platform_image">
                     </div>
                 </div>
             </div>
-            <div class="row formqv platform_sub" >
-                <div class=" col-sm-12 qvclass">
-                    <div class=" col-sm-6">
+                <div class="col-sm-9  qvclass m-auto">
+                    <div class="col-12 col-sm-6">
                         <p style="color: #293D8A;">Jangan lupa kongsikan permainan ini dengan rakan-rakan anda dan
                             meningkatkan peluang untuk menang! </p>
-                        <a href="https://www.facebook.com/home.php">
-                        <img src="img/fb.png">
-                        <a href="https://www.instagram.com">
-                        <img src="img/insta.png">
-                        <input onclick="copy()" class="copy-input" value="https://www.qvskincare.com/my"
-                            id="copyClipboard" readonly>
-                        <button class="copy-btn" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+                        <div class="row align-items-center justify-content-center">
+                            <a href="https://www.facebook.com/home.php">
+                                <img src="img/fb.png" class="mobile_icon">  
+                            </a>                  
+                            <a href="https://www.instagram.com">
+                                <img src="img/insta.png" class="mobile_icon">    
+                            </a>                
+                            <input onclick="copy()" class="copy-input" value="https://www.qvskincare.com/my" id="copyClipboard" readonly>
+                            <button class="copy-btn" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-12 col-sm-6 text-center">
                         <p style="color: #293D8A;">Layari kedai e-dagang QV untuk pembelian produk QV! </p>
-                        <a href="https://www.lazada.com.my/shop/qv-official-store/"><img src="img/qv1.png"></a>
-                        <a href="https://shopee.com.my/qv.os"><img src="img/qv2.png"></a>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="https://www.lazada.com.my/shop/qv-official-store/"><img class="mobile_image w-100" src="img/qv1.png"></a>
+                            </div>
+                            <div class="col-6">
+                                 <a href="https://shopee.com.my/qv.os"><img class="mobile_image w-100 " src="img/qv2.png"></a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-12 text-center" style="background: #003AA5; padding: 30px;">
+                <div class="col-12 col-sm-9 text-center m-auto" style="background: #003AA5; padding: 30px;">
                     <p style="color: #fff;">Layari laman web untuk maklumat lebih lanjut berkaitan produk QV sekarang!
                     </p>
                     <a href="https://www.qvskincare.com/my/en/news-and-promos/qvbodycampaign21.html">
-                    <img src="img/qv3.png">
+                    <img src="img/qv3.png" class="mobile_image" ></a>
                 </div>
-            </div>
+            
         </div>
         </div>
 

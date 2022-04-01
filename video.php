@@ -61,7 +61,7 @@ if (isset($_POST['send'])) {
     <script type="text/javascript">
     setTimeout(function() {
         document.getElementById('submitButton').hidden = null;
-    }, 10000);
+    }, 13000);
     var countdownNum = 8;
     incTimer();
     </script>

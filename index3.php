@@ -12,7 +12,7 @@ include('include/header.php');
     </div>      
     <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">  
   </div>
-  <div class="col-12 col-sm-10 col-md-6 col-lg-7 m-auto pb-5">
+  <div class="col-12 col-sm-10 col-md-6 col-lg-7 m-auto" style="padding-bottom:100px">
     <div class="row mt-4 group_div align-items-center justify-content-center">    
       <div class="mx-3 text-center">
         <div>
@@ -57,7 +57,7 @@ include('include/header.php');
       Pastikan posisi cream diletakkan tepat pada kawasan bulatan
   </p>
   <div class="text-center">
-  <a href ="index4.php">
+      <a href ="index4.php">
         <button type="button" id= "MULA" class="btn btn-primary mt-3 btn-main" >MULA</button>
       </a>
   </div>
@@ -72,9 +72,7 @@ include('include/header.php');
 
 
 <script type="text/javascript">
-  $("#MULA").click(function(){
-    window.location.href = 'index4.php';
-  });
+  
 </script>
 
 </body>
