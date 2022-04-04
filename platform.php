@@ -11,11 +11,11 @@ error_reporting(0);
             <div class="row text-center ">
                 <div class="col-sm-12 mt-md-5" >
                     <div class="col-sm-12">
-                        <p class = "platform_first_line m-md-0" > Anda telah berjaya menyertai Cabutan Bertuah Raya QV dan berpeluang
+                        <p class = "platform_first_line mt-md-5" > Anda telah berjaya menyertai Cabutan Bertuah Raya QV dan berpeluang
                             memenangi</p>
                         <p  class = "platform_second_line px-5 px-md-0" >Hadiah Wang Tunai bernilai RM 500! </p>
                     </div>
-                    <div class="platform_image_div" >
+                    <div class="platform_image_div mt-md-5" >
                    <img src="assets/image/platform.png" class="platform_image">
                     </div>
                 </div>
@@ -25,13 +25,14 @@ error_reporting(0);
                         <p style="color: #293D8A;" class="platform_text3">Jangan lupa kongsikan permainan ini dengan rakan-rakan anda dan
                             meningkatkan peluang untuk menang! </p>
                         <div class="row align-items-center m-0">
-                            <a href="https://www.facebook.com/home.php">
-                                <img src="img/fb.png" class="mobile_icon">  
-                            </a>                  
-                            <a href="https://www.instagram.com">
-                                <img src="img/insta.png" class="mobile_icon">    
-                            </a>                
-                            <input onclick="copy()" class="copy-input" value="https://www.qvskincare.com/my" id="copyClipboard" readonly>
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="http://localhost/cream/platform.php" data-a2a-title="platform page">
+                            <!-- <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://qvcontestraya.wonderpod.io/platform.php" data-a2a-title="platform page"> -->
+                                <!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
+                                <a class="a2a_button_facebook"><img src="img/fb.png" class="mobile_icon"> </a>
+                                <a class="a2a_button_twitter"><img src="img/insta.png" class="mobile_icon"> </a>
+                                <!-- <a class="a2a_button_email"></a> -->
+                            </div>          
+                            <input onclick="copy()" class="copy-input ml-2" value="https://www.qvskincare.com/my" id="copyClipboard" readonly>
                             <button class="copy-btn" id="copyButton" onclick="copy()"><img src="assets/image/copy_icon.png" class="w-100">    
                             </button>
                         </div>
@@ -69,5 +70,8 @@ error_reporting(0);
             $('#copied-success').fadeOut(800);
         }
     </script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
 </body>
 </html>
+
