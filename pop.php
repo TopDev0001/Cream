@@ -66,15 +66,15 @@ if (isset($_POST['send'])) {
                     <input type="text" class="form-control py-1" placeholder="Nama *" name="name" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control py-1" placeholder="NO. K/P *" name="kp" required>
+                    <input type="text" class="form-control py-1" placeholder="NO. K/P* (Contoh: 801010-10-1010)" name="kp" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control py-1" placeholder="NO. Telefon *" name="telefon" required>
+                    <input type="text" class="form-control py-1" placeholder="NO. Telefon* (Contoh: +6012-12345678)" name="telefon" required>
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control py-1" placeholder="E-mel *" name="email" required>
                 </div>
-                <button name="send" type="submit" class="btn btn-default py-3 text-white" style="width: 100%; background-color:#0078BF">HANTAR</button>
+                <button name="send" type="submit" class="btn btn-default  text-white" style="width: 100%; background-color:#0078BF">HANTAR</button>
             </form>
             <p style="color: #293D8A" class="form_text2 mt-2 mt-md-4 mb-2"> Dengan penghantaran butiran ini, anda telah dianggap sudah baca, faham dan bersetuju dengan Terma & Syarat QV dan Dasar Privasi Digital. </p>
         </div>

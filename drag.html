@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+</head>
+ 
+<body>
+    <div style="height:30px;"></div>
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6 well">
+            <div class="row">
+                <div class="col-lg-12">
+                    <center>
+                        <h2 class="text-primary">Drag and Drop using AJAX/JQuery</h2>
+                    </center>
+                    <hr style="border-top: 1px dotted #8c8b8b;" />
+                    <div class="pull-left" style="border:1px #000 dotted; width:230px;">
+                        <center><label style="font-size:11px;" class="alert-danger">Select your favorite fruit</label></center>
+                        <ul style="list-style-type:none;" id="draggable">
+                            <li>Apple</li>
+                            <li>Orange</li>
+                            <li>Strawberry</li>
+                            <li>Mango</li>
+                            <li>Pineapple</li>
+                            <li>Grapes</li>
+                            <li>Banana</li>
+                            <li>Jackfruit</li>
+                            <li>Lemon</li>
+                            <li>Peach</li>
+                            <li>          <img class="card3" id = "card3" src="assets/image/cream3.png" alt="cream3">
+                            </li>
+                        </ul>
+                        <p></p>
+                    </div>
+                    <div class="pull-right">
+                        <div style="padding:20px; border:1px #000 dotted; width:400px;">
+                            <div class="form-group">
+                                <input type="text" id="word" name="program" class="form-control p_lang ui-droppable" />
+                 
+
+                                <center><label>Drop your choice here</label></center><br>
+ 
+                               <img id="mark"  class="mark3" src="assets/image/mark_1.png" alt="mark_3" />          
+                                
+ 
+                            </div>
+ 
+                        </div><br>
+                        <div style="padding:20px; border:1px #000 dotted; width:400px;">
+                            You have selected: <strong><span id="result_text"></span></strong>
+ 
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#reset').on('click', function() {
+            $('ul').attr('id', 'draggable');
+            $('.p_lang').removeAttr('disabled', 'disabled');
+            $('.p_lang').val('');
+            $('#result_text').text('');
+        });
+ 
+        $('#submit').on('click', function() {
+            var text = $('#word').val();
+            if (text != "") {
+                $('#result_text').text(text);
+            } else {
+                alert("Please select your choice first");
+            }
+        });
+ 
+        $('#card3').mouseover(function() {
+            $(this).css('cursor', 'pointer');
+        });
+        $("#card3").draggable({
+            helper: 'clone'
+        });
+        $("#mark3").droppable({
+            accept: "#card3",
+            drop: function(ev, ui) {
+                $(this).insertAtCaret(ui.draggable.text());
+                $(this).attr('disabled', 'disabled');
+                $("#draggable").removeAttr('id');
+            }
+        });
+    });
+ 
+    $.fn.insertAtCaret = function(myValue) {
+        return this.each(function() {
+            if (document.selection) {
+                this.focus();
+                sel = document.selection.createRange();
+                sel.text = myValue;
+                this.focus();
+            } else if (this.selectionStart || this.selectionStart == '0') {
+                var startPos = this.selectionStart;
+                var endPos = this.selectionEnd;
+                var scrollTop = this.scrollTop;
+                this.value = this.value.substring(0, startPos) + myValue + this.value.substring(endPos, this.value.length);
+                this.focus();
+                this.selectionStart = startPos + myValue.length;
+                this.selectionEnd = startPos + myValue.length;
+                this.scrollTop = scrollTop;
+            } else {
+                this.value += myValue;
+                this.focus();
+            }
+        });
+    };
+</script>
+</html>

@@ -20,6 +20,9 @@
         font-size: 30px;
     }
     .home_text3{
+        font-size: 16px;
+    }
+    .text3{
         font-size: 22px;
     }
     .card1{
@@ -57,12 +60,14 @@
         /* margin-top: -300px; */
     }
     .wave_img{
-        margin-top: -170px;
+        margin-top: -120px;
         width: 100vw;
-        max-height: 200px;        
+        max-height: 200px;      
+        z-index: 20;  
     }
     .index_div{
         display: flex;
+        height: 100vh;
     }
     .group_mobile_div{
         display: none;
@@ -99,11 +104,24 @@
         background-image: url("../image/mark_2.png") ; 
         background-size: cover;
     }
+    .drop_image1{
+        background-image: url("../image/cream_done1.png") ; 
+        background-size: cover;
+    }
+    .drop_image2{
+        background-image: url("../image/cream_done2.png") ; 
+        background-size: cover;
+    }
+    .drop_image3{
+        background-image: url("../image/cream_done3.png") ; 
+        background-size: cover;
+    }
     .fit_content {
         width: fit-content;
         height: fit-content;
         position: relative;
-        z-index: -100;
+        margin: auto;
+
     }
     .text_div{
         display: flex;
@@ -113,11 +131,11 @@
         height: 50px;
         width: 50px;
         position: absolute;
-        top: 136px;
-        right: 160px;
+        top: 24%;
+        right: 34%;
     } 
     .first_text1{
-        font-size: 35px;    
+        font-size: 19px;    
     }
     .draggable{
         filter: alpha(opacity=100);
@@ -186,8 +204,8 @@
     }
     .video_first_line{
         color: #293D8A;
-        font-size: 17px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height: 25px;
         margin-bottom: 0;
     }
     .video_second_line{
@@ -250,10 +268,13 @@
         color:#293D8A;
     }
     .mobile_icon{
-        width: 60%;
+        width: 40px;
     }
     .girl_div{
         z-index: 12;
+    }
+    .girl_image{
+        z-index: -1;
     }
     
 @media only screen and (max-width: 768px) {
@@ -264,7 +285,7 @@
         display: none;
     }
     .first_text1 {
-        font-size: 25px;
+        font-size: 17px;
     }
     .home_text1{
         font-size: 14px;
@@ -291,31 +312,32 @@
         display: block;
     }
     .wave_img{
-        margin-top: -65px;  
-        max-height: 200px;      
+        margin-top: -55px;  
+        max-height: 200px;   
+        z-index: 20;   
     }
-    .girl_image{
-        width: 80%;
-        height: 80%;
+     .girl_image{
+        width:90%;
+        height: 90%;
     }
     .mark4{
         height: 40px;
         width: 40px;
         position: absolute;
-        top: 96px;
-        right: 192px;
+        top: 25%;
+        right: 42%;
     }
     .card1{
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
     }
     .card2{
-        width: 37px;
-        height: 37px;
+        width: 35px;
+        height: 35px;
     }
     .card3{
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
     }
     .box_image{
         width: 300px;
@@ -342,28 +364,30 @@
         height: 27px;
         width: 27px;
         position: absolute;
-        top: 113px;
-        right: 154px;
+        top: 32%;
+        right: 29%;
     }
     .mark2{
         height: 40px;
         width: 40px;
         position: absolute;
-        top: 96px;
-        right: 203px;
+        top: 25%;
+        right: 44%;
     } 
     .mark3{
         height: 50px;
         width: 50px;
         position: absolute;
-        right: 173px;
-        top: 200px;
+        right: 35%;
+        top: 52%;
     }
     .platform_image{
-        width: 372px;;
+        width: 350px;;
     }
     .qvclass {
         display: block;
+        padding: 16px;
+        text-align: center;
     }
     .platform_first_line{
        margin-top: 150px;
@@ -374,6 +398,48 @@
     .mobile_image{
         width: 50%;
     }
+    .video_first_line{
+        text-align: center;
+        font-size: 20px;
+    }
+    .video_second_line{
+        font-size: 31px;
+        text-align: center;
+    }
+    .video_text1{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .video_text2{
+        font-size: 12px;
+    }
+    .video_box_div{
+        margin-bottom: -30px;
+        z-index: -1;
+    }
+    .vector_icon{
+        display: none;
+    }
+    .platform_second_line{
+        font-size: 24px;
+    }
+    .platform_text3{
+        font-size: 12px;
+    }
+    .copy-input{
+        font-size: 11px;
+        padding: 9px 45px 7px 5px;
+        width: 70%;
+    }
+ 
+    .margin_top{
+        color: #293D8A;
+        margin-top:100px;
+    }
+    .pop_fist_line {
+        font-size: 20px;
+    }
+
 
 }
 

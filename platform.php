@@ -20,11 +20,11 @@ error_reporting(0);
                     </div>
                 </div>
             </div>
-                <div class="col-sm-9  qvclass m-auto">
+                <div class="col-sm-10  qvclass m-auto">
                     <div class="col-12 col-sm-6">
-                        <p style="color: #293D8A;">Jangan lupa kongsikan permainan ini dengan rakan-rakan anda dan
+                        <p style="color: #293D8A;" class="platform_text3">Jangan lupa kongsikan permainan ini dengan rakan-rakan anda dan
                             meningkatkan peluang untuk menang! </p>
-                        <div class="row align-items-center justify-content-center">
+                        <div class="row align-items-center m-0">
                             <a href="https://www.facebook.com/home.php">
                                 <img src="img/fb.png" class="mobile_icon">  
                             </a>                  
@@ -32,11 +32,12 @@ error_reporting(0);
                                 <img src="img/insta.png" class="mobile_icon">    
                             </a>                
                             <input onclick="copy()" class="copy-input" value="https://www.qvskincare.com/my" id="copyClipboard" readonly>
-                            <button class="copy-btn" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+                            <button class="copy-btn" id="copyButton" onclick="copy()"><img src="assets/image/copy_icon.png" class="w-100">    
+                            </button>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 text-center">
-                        <p style="color: #293D8A;">Layari kedai e-dagang QV untuk pembelian produk QV! </p>
+                    <div class="col-12 col-sm-6 text-center mt-3">
+                        <p style="color: #293D8A;" class="platform_text3">Layari kedai e-dagang QV untuk pembelian produk QV! </p>
                         <div class="row">
                             <div class="col-6">
                                 <a href="https://www.lazada.com.my/shop/qv-official-store/"><img class="mobile_image w-100" src="img/qv1.png"></a>
@@ -48,7 +49,7 @@ error_reporting(0);
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-9 text-center m-auto" style="background: #003AA5; padding: 30px;">
+                <div class="col-12 col-sm-10 text-center m-auto " style="background: #003AA5; padding: 30px;">
                     <p style="color: #fff;">Layari laman web untuk maklumat lebih lanjut berkaitan produk QV sekarang!
                     </p>
                     <a href="https://www.qvskincare.com/my/en/news-and-promos/qvbodycampaign21.html">

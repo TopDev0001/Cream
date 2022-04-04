@@ -24,8 +24,8 @@ if (isset($_POST['send'])) {
             <div class="row pt-5 px-md-5">                
                 <div class="col-12 col-md-6 m-auto px-5">
                     <div class="d-flex align-items-center pt-5 pt-md-0 mt-5 mt-md-0">
-                        <img class="mr-2" src="assets/image/vector.png" alt="" />
-                        <p class="video_first_line"> Kod baucar pembelian bernilai RM5 telah dihantar ke e-mel anda. </p>
+                        <img class="mr-2 vector_icon" src="assets/image/vector.png" alt="" />
+                        <p class="video_first_line mt-4 mt-md-0"> Kod baucar pembelian bernilai RM5 telah dihantar ke e-mel anda. </p>
                     </div>
                     <p class ="video_second_line mt-2">Jom memenangi Hadiah Wang Tunai bernilai RM500 atau produk QV!</p>
                 </div>
@@ -35,10 +35,12 @@ if (isset($_POST['send'])) {
             </div>
             <div class="row formqv_video text-center p-3 p-md-5">
                 <div class="col-12">
-                    <p style="color: #293D8A;" class="video_text1"> Tonton video ini untuk menyertai Cabutan Bertuah Raya QV.</p>
-                    <video id="myvid" class="video_play" muted autoplay controls>
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    </video>
+                    <p style="color: #293D8A;" class="video_text1 mb-0"> Tonton video ini untuk menyertai Cabutan Bertuah Raya QV.</p>
+                        <iframe  src="https://www.youtube.com/embed/3_6-3ont4tg" class="video_play"
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <!-- width="560" height="315" -->
                     <p style="color: #293D8A;" class="video_text2"> Peringatan: Jangan tutup pelayar web anda! </p>
                 </div>
             </div>
@@ -61,7 +63,7 @@ if (isset($_POST['send'])) {
     <script type="text/javascript">
     setTimeout(function() {
         document.getElementById('submitButton').hidden = null;
-    }, 13000);
+    }, 33000);
     var countdownNum = 8;
     incTimer();
     </script>
