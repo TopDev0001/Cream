@@ -214,7 +214,8 @@
         line-height: 36px;
     }
     .video_play{
-        height: 340px;        
+        height: 340px;   
+        width : 650px;     
     }
     .clipboard {
         position: relative;
@@ -359,6 +360,8 @@
     }
     .video_play{
         height: 200px;
+        width : 300px;     
+
     }
     .mark1{
         height: 27px;
@@ -443,8 +446,8 @@
 
 }
 
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
     .video_play{
         height: 170px;
     }
-}
+} */
