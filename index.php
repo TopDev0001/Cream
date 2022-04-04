@@ -3,7 +3,7 @@ include('include/header.php');
 ?>
 
 <!-- <div class="container"> -->
-  <div class="row m-0 index_div"  >
+  <div class="row m-0 index_div " >
     <div class="col-12 col-sm-12 col-md-6 girl_div m-auto" style="padding: 0">
       <div class="fit_content d-flex m-auto">
         <img class="girl_image" src="assets/image/girl_cream.png" alt="girl" />
@@ -11,8 +11,8 @@ include('include/header.php');
       </div>            
       <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave"> 
     </div>
-    <div class="col-12 col-sm-10 col-md-6 my-auto">
-      <div class="text-center float-left">
+    <div class="col-12 col-sm-10 col-md-6 " style="padding-top: 270px">
+      <div class="text-center float-left" style="width:400px">
         <div class="first_text1 " style="color: #293D8A">Kulitnya menjadi kering kerana berada di dalam bilik <br /> berhawa dingin sepanjang hari.
         </div>
           <a href ="index2.php">

@@ -6,15 +6,13 @@ include('include/header.php');
   <div class="col-12 col-sm-12 col-md-6 girl_div m-auto" style="padding: 0">
     <div class="fit_content d-flex">
       <img class="girl_image" src="assets/image/girl_cream.png" alt="girl" />
-      <img class="mark1" id = "mark1"src="assets/image/mark_1.png" alt="mark_1" />
-      <img class="mark2" src="assets/image/mark_1.png" alt="mark_2" />
-      <img  class="mark3" src="assets/image/mark_1.png" alt="mark_3" />          
+      <img class="mark4" id = "mark1"src="assets/image/mark.png" alt="mark_1" />      
     </div>      
     <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">  
   
   </div>
-  <div class="col-12 col-sm-10 col-md-6 m-auto">    
-    <div class="text-center ml-md-5  float-left">
+  <div class="col-12 col-sm-10 col-md-6"  style="padding-top:200px">    
+    <div class="text-center float-left" style="width:450px">
           <div class="home_text2" style="color: #293D8A"> Raya Ini, Pilih Kebaikan!</div>
          <div class="text3" style="color: #293D8A">
             Pilih <img src="assets/image/logo.png" class="logo_image" style="height: 70px;width:100px; margin:2px">Cream
