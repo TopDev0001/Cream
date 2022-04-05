@@ -7,7 +7,6 @@ include('include/header.php');
     <div class="fit_content d-flex">
       <img class="girl_image" src="assets/image/girl_2.png" alt="girl" />      
     </div>
-    <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">      
   </div>
   <div class="col-12 col-sm-10 col-md-6  m-auto " style="padding-bottom: 100px">
   <div class="float-left">
@@ -20,6 +19,8 @@ include('include/header.php');
     </div>
   </div>
   </div>
+  <img class=" wave_img" src="assets/image/BG_wave.png" alt="wave">      
+
 </div>
 
 <div class="group_mobile_div">

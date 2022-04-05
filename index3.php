@@ -10,10 +10,9 @@ include('include/header.php');
       <img class="mark2" src="assets/image/mark_1.png" alt="mark_2" />
       <img  class="mark3" src="assets/image/mark_1.png" alt="mark_3" />        
     </div>    
-  <img class=" wave_img" src="assets/image/BG_wave.png" alt="wave">  
 
   </div>
-  <div class="col-12 col-sm-10 col-md-6  m-auto" style="padding-bottom:100px">
+  <div class="col-12 col-sm-10 col-md-6  m-auto" >
   <div class="float-left">
     <div class="row mt-4 group_div align-items-center justify-content-center">    
       <div class="mx-3 text-center">
@@ -33,7 +32,7 @@ include('include/header.php');
           </p>
       </div>
     </div>
-    <p class="home_text3 text-center mt-6" style="color: #003AA5">
+    <p class="home_text3 text-center " style="color: #003AA5">
         Pastikan posisi cream diletakkan tepat pada kawasan bulatan
     </p>
     <div class="text-center">
@@ -43,6 +42,8 @@ include('include/header.php');
       </div>    
   </div>
 </div>
+<img class=" wave_img" src="assets/image/BG_wave.png" alt="wave">  
+
 </div>
 
 <div class="group_mobile_div  text-center">     

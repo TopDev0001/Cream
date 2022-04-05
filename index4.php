@@ -10,7 +10,6 @@ include('include/header.php');
               <div class="mark2 bg_image" id = "mark2"ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"> </div>
               <div class="mark3 bg_image" id = "mark3" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>   
             </div>   
-          <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">
 
           </div>
           <div class="col-12 col-sm-10 col-md-6 m-auto " style="padding-bottom: 7rem">
@@ -40,6 +39,8 @@ include('include/header.php');
             </div>
           </div>
           </div>
+          <img class=" wave_img" src="assets/image/BG_wave.png" alt="wave">
+
         </div>
 
         <div class="group_mobile_div  text-center">

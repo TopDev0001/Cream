@@ -9,9 +9,8 @@ include('include/header.php');
         <img class="girl_image" src="assets/image/girl_cream.png" alt="girl" />
         <img class="mark4" id = "mark1"src="assets/image/mark.png" alt="mark_1" />         
       </div>            
-      <img class=" wave_img" src="assets/image/BG_wave.png" alt="wave"> 
     </div>
-    <div class="col-12 col-sm-10 col-md-6 " style="padding-top: 270px">
+    <div class="col-12 col-sm-10 col-md-6 m-auto" >
       <div class="text-center float-left" style="width:400px">
         <div class="first_text1 " style="color: #293D8A">Kulitnya menjadi kering kerana berada di dalam bilik <br /> berhawa dingin sepanjang hari.
         </div>
@@ -19,7 +18,9 @@ include('include/header.php');
             <button type="button" id= "SETERUSNYA" class="btn btn-primary mt-5 btn-main ">SETERUSNYA</button>
           </a>
       </div>
-    </div>         
+    </div>     
+    <img class=" wave_img" src="assets/image/BG_wave.png" alt="wave"> 
+
  </div>
 <!-- </div> -->
 

@@ -20,7 +20,9 @@
         font-size: 30px;
     }
     .home_text3{
-        font-size: 16px;
+        font-size: 17px;
+        margin-left: 90px;
+        margin-top: 30px;
     }
     .text3{
         font-size: 22px;
@@ -62,9 +64,12 @@
     .wave_img{
         margin-top: -110px;
         width: 100vw;
-        max-height: 300px;      
+        max-height: 500px;      
         z-index: 20;  
-        height: 250px;
+        height: 300px;
+        position:absolute;
+        bottom:0;
+        
     }
     .index_div{
         display: flex;
@@ -78,24 +83,24 @@
         height: 34px;
         width: 34px;
         position: absolute;
-        top: 163px;
-        right: 100px;
+        top: 204px;
+        right: 124px;
         z-index: 999;
     }
     .mark2{
         height: 50px;
         width: 50px;
         position: absolute;
-        top: 136px;
-        right: 173px;
+        top: 168px;
+        right: 216px;
         z-index: 999;
     } 
     .mark3{
         height: 64px;
         width: 64px;
         position: absolute;
-        right: 128px;
-        top: 290px;
+        right: 161px;
+        top: 348px;
         z-index: 999;
     }
     .bg_image{
@@ -130,11 +135,11 @@
         justify-content: center;
     }
     .mark4{
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         position: absolute;
-        top: 24%;
-        right: 34%;
+        top: 25%;
+        right: 35%;
     } 
     .first_text1{
         font-size: 19px;    
@@ -318,10 +323,11 @@
         margin-top: -55px;  
         max-height: 200px;   
         z-index: 20;   
+        position:unset;
     }
      .girl_image{
-        width:90%;
-        height: 90%;
+        width:87%;
+        height: 87%;
     }
     .mark4{
         height: 40px;
@@ -447,12 +453,17 @@
     body{
         background-image: url("../image/background1(2).png") ;         
     }
+    .home_text3{
+      
+        margin-left: 0px;
+       
+    }
 
 }
 
 @media only screen and (min-width: 1024px) {
     .girl_image{
-        width:600px;
+        width:555px;
     }
     .wave_img{
         height: 250px;
