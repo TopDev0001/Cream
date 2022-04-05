@@ -32,7 +32,7 @@ include('include/header.php');
           </p>
       </div>
     </div>
-    <p class="home_text3 text-center " style="color: #003AA5">
+    <p class="home_text3 text-center " style="color: #003AA5;padding-left:90px">
         Pastikan posisi cream diletakkan tepat pada kawasan bulatan
     </p>
     <div class="text-center">
