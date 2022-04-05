@@ -18,9 +18,9 @@ include('include/header.php');
             <div class="row mt-md-4 mt-sm-3 group_div align-items-center justify-content-center" id="text2">        
               <img class="mx-3" src="assets/image/tube.png" alt="tube">        
               <div class="mx-3 text-center" id = "draggable">
-                <div class="card1" id="card1"  draggable="true" ondragstart="return dragStart(event)"></div> 
-                <div class="card2" id="card2"  draggable="true" ondragstart="return dragStart(event)"></div>  
-                <div class="card3" id="card3"  draggable="true" ondragstart="return dragStart(event)"></div>
+                <div class="card1" id="card1" style = "cursor:pointer" draggable="true" ondragstart="return dragStart(event)" ></div> 
+                <div class="card2" id="card2" style = "cursor:pointer" draggable="true" ondragstart="return dragStart(event)"></div>  
+                <div class="card3" id="card3" style = "cursor:pointer" draggable="true" ondragstart="return dragStart(event)"></div>
               </div>
               <div class="row align-items-center mx-3">          
                 <img class="mx-2 finger_image" src="assets/image/finger.png" alt="finger">                  
@@ -52,16 +52,16 @@ include('include/header.php');
             </p>          
           </div>
           <div class="mt-3 text-center d-flex justify-content-center align-items-center" style="height:40px" >    
-                <div class="card1 m-1" id="m_card1"   ontouchmove="move(event)"
+                <div class="card1 m-1" id="m_card1"   
                         ontouchmove="move(event)" ></div> 
-                <div class="card2 m-1" id="m_card2"   ontouchmove="move(event)"
+                <div class="card2 m-1" id="m_card2" 
                         ontouchmove="move(event)" ></div>  
-                <div class="card3 m-1" id="m_card3"  ontouchmove="move(event)"
+                <div class="card3 m-1" id="m_card3"  
                         ontouchmove="move(event)"></div>
           </div>
           <div class="fit_content d-flex mt-5">
             <img class=" girl_image" src="assets/image/girl_cream.png" alt="girl" />
-            <div class="mark1 bg_image" id = "m_mark1"  ontouchend="drop(event)"> </div>
+            <div class="mark1 bg_image" id = "m_mark1"  ontouchmend="drop(event)" > </div>
               <div class="mark2 bg_image" id = "m_mark2"  ontouchend="drop(event)"> </div>
               <div class="mark3 bg_image" id = "m_mark3" ontouchend="drop(event)" ></div>   
           </div>   
@@ -105,6 +105,7 @@ include('include/header.php');
                         moving.style.top = (event.changedTouches[0].clientY - moving.clientHeight / 2).toString() +"px";
                     }
                 }   
+                
             }
        
 
@@ -157,6 +158,8 @@ include('include/header.php');
             event.preventDefault();
         }
         var count = 1;
+
+ 
         function dragStart(ev) { 
         const card_id = ev.target.getAttribute('id');
         const mark_id = "#mark" + card_id.slice(4);
@@ -168,16 +171,23 @@ include('include/header.php');
             return true;
         }
 
-        function dragEnter(ev) {
+
+
+        function dragEnter(event) {
             event.preventDefault();
+           event.target.style.cursor = 'pointer';
             return true;
         }
 
-        function dragOver(ev) {
+        function dragOver(event) {
+    
+          event.target.style.cursor = 'pointer';
             return false;
         }
 
         function dragDrop(ev) {
+        // ev.target.style.cursor = 'pointer';
+
             var src = ev.dataTransfer.getData("Text");
             if(src == "card1")
             {

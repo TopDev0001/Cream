@@ -12,33 +12,50 @@ if (isset($_POST['send'])) {
 
     $kp = $_POST['kp'];
 
-    $telefon = $_POST['telefon'];
+    if(strlen($kp) == 14)
+            {
 
-    $email = $_POST['email'];
+                $telefon = "+60".$_POST['telefon'];
+                // if(strlen($telefon) == 15 || strlen($telefon) == 14)
+                // {
 
-    $sql = "INSERT INTO tblbooking(name,kp,telefon,email) VALUES(:name,:kp,:telefon,:email)";
+                // $error = "NO. Telefon* is wrong. Please try again";
+                    
+                        $email = $_POST['email'];
 
-    $query = $dbh->prepare($sql);
+                        $sql = "INSERT INTO tblbooking(name,kp,telefon,email) VALUES(:name,:kp,:telefon,:email)";
 
-    $query->bindParam(':name', $name, PDO::PARAM_STR);
+                        $query = $dbh->prepare($sql);
 
-    $query->bindParam(':kp', $kp, PDO::PARAM_STR);
+                        $query->bindParam(':name', $name, PDO::PARAM_STR);
 
-    $query->bindParam(':telefon', $telefon, PDO::PARAM_STR);
+                        $query->bindParam(':kp', $kp, PDO::PARAM_STR);
 
-    $query->bindParam(':email', $email, PDO::PARAM_STR);
+                        $query->bindParam(':telefon', $telefon, PDO::PARAM_STR);
 
-    $query->execute();
+                        $query->bindParam(':email', $email, PDO::PARAM_STR);
 
-    $lastInsertId = $dbh->lastInsertId();
+                        $query->execute();
 
-    if ($lastInsertId) {
+                        $lastInsertId = $dbh->lastInsertId();
 
-        header('Location:video.php');
+                        if ($lastInsertId) {
 
-    } else {
-        $error = "Something went wrong. Please try again";
-    }
+                            header('Location:video.php');
+
+                        } else {
+                            $error = "Something went wrong. Please try again";
+                        }
+                // } 
+                // else{
+                //       $error = "NO. Telefon*  is wrong. Please try again";
+
+                // }
+            }
+        else{
+            $error = "NO. K/P* is wrong. Please try again";
+
+        }
 }
 ?>
 
@@ -66,10 +83,10 @@ if (isset($_POST['send'])) {
                     <input type="text" class="form-control py-1" placeholder="Nama *" name="name" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control py-1" placeholder="NO. K/P* (Contoh: 801010-10-1010)" name="kp" required>
+                    <input type="text" class="form-control py-1" placeholder="NO. K/P* (Contoh: 801010-10-1010)" name="kp" required maxlength="14">
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control py-1" placeholder="NO. Telefon* (Contoh: +6012-12345678)" name="telefon" required>
+                    <input type="text" class="form-control py-1" placeholder="NO. Telefon* (Contoh: (+60)12-12345678)" name="telefon" required maxlength="11">
                 </div>
                 <div class="form-group">
                     <input type="email" class="form-control py-1" placeholder="E-mel *" name="email" required>

@@ -33,7 +33,8 @@ error_reporting(0);
                             <a class="a2a_button_telegram"></a>
                             </div>
                             <input onclick="copy()" class="copy-input ml-2" value="https://www.qvskincare.com/my" id="copyClipboard" readonly>
-                            <button class="copy-btn" id="copyButton" onclick="copy()"><img src="assets/image/copy_icon.png" class="w-100">    
+                            <button class="copy-btn" id="copyButton" onclick="copy()"><i class="far fa-clone"></i>
+                            <!-- <img src="assets/image/copy_icon.png" class="w-100">     -->
                             </button>
                         </div>
                     </div>

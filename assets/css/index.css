@@ -13,6 +13,7 @@
         background-repeat: inherit;
         background-position: center center;
     }
+
     .home_text1{
         font-size: 17px;
     }
@@ -439,7 +440,7 @@
     .copy-input{
         font-size: 11px;
         padding: 9px 45px 7px 5px;
-        width: 60%;
+        width: 55%;
     }
  
     .margin_top{
