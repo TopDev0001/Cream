@@ -52,11 +52,11 @@ include('include/header.php');
             </p>          
           </div>
           <div class="mt-3 text-center d-flex justify-content-center align-items-center" style="height:40px" >    
-                <div class="card1 m-1" id="m_card1"   onmousemove="move(event)"
+                <div class="card1 m-1" id="m_card1"   ontouchmove="move(event)"
                         ontouchmove="move(event)" ></div> 
-                <div class="card2 m-1" id="m_card2"   onmousemove="move(event)"
+                <div class="card2 m-1" id="m_card2"   ontouchmove="move(event)"
                         ontouchmove="move(event)" ></div>  
-                <div class="card3 m-1" id="m_card3"  onmousemove="move(event)"
+                <div class="card3 m-1" id="m_card3"  ontouchmove="move(event)"
                         ontouchmove="move(event)"></div>
           </div>
           <div class="fit_content d-flex mt-5">
