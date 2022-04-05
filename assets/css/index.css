@@ -228,7 +228,7 @@
     }
     .copy-input {
         max-width: 300px;
-        width: 100%;
+        width: 60%;
         cursor: pointer;
         color: #6c6c6c;
         font-size: 14px;
@@ -439,7 +439,7 @@
     .copy-input{
         font-size: 11px;
         padding: 9px 45px 7px 5px;
-        width: 70%;
+        width: 60%;
     }
  
     .margin_top{
@@ -455,7 +455,14 @@
 
 
 }
-
+@media only screen and (min-width: 768px) {
+    .girl_image{
+        width:450px;
+    }
+    .wave_img{
+        height: 180px;   
+     }
+}
 @media only screen and (min-width: 1024px) {
     .girl_image{
         width:555px;

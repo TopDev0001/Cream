@@ -52,11 +52,11 @@ include('include/header.php');
             </p>          
           </div>
           <div class="mt-3 text-center d-flex justify-content-center align-items-center" style="height:40px" >    
-                <div class="card1 m-1" id="m_card1"  ontouchstart="pickup(event)" onmousemove="move(event)"
+                <div class="card1 m-1" id="m_card1"   onmousemove="move(event)"
                         ontouchmove="move(event)" ></div> 
-                <div class="card2 m-1" id="m_card2"  ontouchstart="pickup(event)" onmousemove="move(event)"
+                <div class="card2 m-1" id="m_card2"   onmousemove="move(event)"
                         ontouchmove="move(event)" ></div>  
-                <div class="card3 m-1" id="m_card3"   ontouchstart="pickup(event)" onmousemove="move(event)"
+                <div class="card3 m-1" id="m_card3"  onmousemove="move(event)"
                         ontouchmove="move(event)"></div>
           </div>
           <div class="fit_content d-flex mt-5">
@@ -71,8 +71,21 @@ include('include/header.php');
          <script type="text/javascript">
             let moving = null;
             var count_mobile = 1;
-            function pickup(event) {
-                const card_id = event.target.getAttribute('id');
+            // function pickup(event) {
+            //     const card_id = event.target.getAttribute('id');
+            //     const mark_id = "#m_mark" + card_id.slice(6);
+            //     $(mark_id).removeClass('bg_image');
+            //     $(mark_id).addClass('select_image'); 
+            //     moving = event.target;
+            //     moving.style.height = (moving.clientHeight).toString() + "px";
+            //     moving.style.width =(moving.clientWidth).toString() + "px"; 
+            //     moving.style.position = 'fixed';
+            //     moving.style.zIndex = '2';
+           
+
+            // }
+            function move(event) {
+              const card_id = event.target.getAttribute('id');
                 const mark_id = "#m_mark" + card_id.slice(6);
                 $(mark_id).removeClass('bg_image');
                 $(mark_id).addClass('select_image'); 
@@ -81,10 +94,6 @@ include('include/header.php');
                 moving.style.width =(moving.clientWidth).toString() + "px"; 
                 moving.style.position = 'fixed';
                 moving.style.zIndex = '2';
-           
-
-            }
-            function move(event) {
                 if (moving) {
                     if (event.clientX) {
                         // mousemove

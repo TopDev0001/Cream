@@ -25,13 +25,13 @@ error_reporting(0);
                         <p style="color: #293D8A;" class="platform_text3">Jangan lupa kongsikan permainan ini dengan rakan-rakan anda dan
                             meningkatkan peluang untuk menang! </p>
                         <div class="row align-items-center m-0">
-                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="http://localhost/cream/platform.php" data-a2a-title="platform page">
-                            <!-- <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://qvcontestraya.wonderpod.io/platform.php" data-a2a-title="platform page"> -->
-                                <!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
-                                <a class="a2a_button_facebook"><img src="img/fb.png" class="mobile_icon"> </a>
-                                <a class="a2a_button_instagram"><img src="img/insta.png" class="mobile_icon"> </a>
-                                <!-- <a class="a2a_button_email"></a> -->
-                            </div>          
+                         <!-- AddToAny BEGIN -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                           
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_whatsapp"></a>
+                            <a class="a2a_button_telegram"></a>
+                            </div>
                             <input onclick="copy()" class="copy-input ml-2" value="https://www.qvskincare.com/my" id="copyClipboard" readonly>
                             <button class="copy-btn" id="copyButton" onclick="copy()"><img src="assets/image/copy_icon.png" class="w-100">    
                             </button>
