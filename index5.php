@@ -32,7 +32,7 @@ include('include/header.php');
   </a>
   </div>
   <div class="fit_content d-flex mt-4">
-    <img class="girl_image" src="assets/image/girl_cream_2.png" alt="girl" />    
+    <img class="girl2_image" src="assets/image/girl_cream_2.png" alt="girl" />    
   </div>   
   <img class="w-100 wave_img" src="assets/image/wave_mobile.png" alt="wave">
 </div>

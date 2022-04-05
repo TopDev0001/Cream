@@ -452,18 +452,29 @@
     body{
         background-image: url("../image/background1(2).png") ;         
     }
+    .girl2_image{
+        z-index: -1;
+    }
 
 
 }
 @media only screen and (min-width: 768px) {
     .girl_image{
-        width:450px;
+        width:530px;
     }
     .wave_img{
-        height: 180px;   
+        height: 250px;   
      }
 }
 @media only screen and (min-width: 1024px) {
+    .girl_image{
+        width:555px;
+    }
+    .wave_img{
+        height: 230px;
+    }
+}
+@media only screen and (min-width: 1200px) {
     .girl_image{
         width:555px;
     }
