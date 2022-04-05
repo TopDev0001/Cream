@@ -10,7 +10,7 @@ include('include/header.php');
       <img class="mark2" src="assets/image/mark_1.png" alt="mark_2" />
       <img  class="mark3" src="assets/image/mark_1.png" alt="mark_3" />        
     </div>    
-  <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">  
+  <img class=" wave_img" src="assets/image/BG_wave.png" alt="wave">  
 
   </div>
   <div class="col-12 col-sm-10 col-md-6  m-auto" style="padding-bottom:100px">

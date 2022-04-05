@@ -8,7 +8,7 @@ include('include/header.php');
       <img class="girl_image" src="assets/image/girl_cream.png" alt="girl" />
       <img class="mark4" id = "mark1"src="assets/image/mark.png" alt="mark_1" />      
     </div>      
-    <img class="h-100 wave_img" src="assets/image/BG_wave.png" alt="wave">  
+    <img class=" wave_img" src="assets/image/BG_wave.png" alt="wave">  
   
   </div>
   <div class="col-12 col-sm-10 col-md-6"  style="padding-top:200px">    
