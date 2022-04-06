@@ -13,6 +13,10 @@
         background-repeat: inherit;
         background-position: center center;
     }
+    html {cursor: default;}
+    html .showCursor{
+        cursor: pointer !important;
+    }
 
     .home_text1{
         font-size: 17px;

@@ -61,7 +61,7 @@ include('include/header.php');
           </div>
           <div class="fit_content d-flex mt-5">
             <img class=" girl_image" src="assets/image/girl_cream.png" alt="girl" />
-            <div class="mark1 bg_image" id = "m_mark1"  ontouchmend="drop(event)" > </div>
+            <div class="mark1 bg_image" id = "m_mark1"  ontouchend="drop(event)" > </div>
               <div class="mark2 bg_image" id = "m_mark2"  ontouchend="drop(event)"> </div>
               <div class="mark3 bg_image" id = "m_mark3" ontouchend="drop(event)" ></div>   
           </div>   
@@ -233,6 +233,8 @@ include('include/header.php');
         document.addEventListener("touchend", touchHandler,  {passive:false});
         document.addEventListener("touchcancel", touchHandler,  {passive:false});
     });
+
+
   </script>
 </body>
 </html>
