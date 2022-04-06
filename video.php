@@ -70,11 +70,8 @@ if (isset($_POST['send'])) {
     <script type="text/javascript">
     setTimeout(function() {
         document.getElementById('submitButton').hidden = null;
-    }, 34000);
-    $(document).ready(function(){
-        $('#video').get(0).play();
+    }, 35000);
 
-    });
     </script>
     
 </body>

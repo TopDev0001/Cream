@@ -14,7 +14,7 @@
         background-position: center center;
     }
     html {cursor: default;}
-    html .showCursor{
+    .showCursor{
         cursor: pointer !important;
     }
 
@@ -37,6 +37,8 @@
         margin-bottom: 10px;
         background-image: url(../image/cream1.png);
         background-size: cover;
+        z-index: 999;
+        cursor: pointer;
     }
     .card2{
         height: 50px;
@@ -44,12 +46,16 @@
         margin-bottom: 10px;
         background-image: url(../image/cream2.png);
         background-size: cover;
+        z-index: 999;
+        cursor: pointer;
     }
     .card3{
         height: 64px;
         width: 64px;
         background-image: url(../image/cream3.png);
         background-size: cover;
+        z-index: 999;
+        cursor: pointer;
     }
     .first_page{
         background-image: url("../image/background.png") ;         
@@ -89,7 +95,7 @@
         position: absolute;
         top: 204px;
         right: 124px;
-        z-index: 999;
+        z-index: 1;
     }
     .mark2{
         height: 50px;
@@ -97,7 +103,7 @@
         position: absolute;
         top: 168px;
         right: 216px;
-        z-index: 999;
+        z-index: 1;
     } 
     .mark3{
         height: 64px;
@@ -105,7 +111,7 @@
         position: absolute;
         right: 161px;
         top: 348px;
-        z-index: 999;
+        z-index: 1;
     }
     .bg_image{
         background-image: url("../image/mark_1.png") ; 
