@@ -37,7 +37,7 @@ if (isset($_POST['send'])) {
             <div class="row formqv_video text-center p-3 p-md-5">
                 <div class="col-12">
                     <p style="color: #293D8A;" class="video_text1 mb-3"> Tonton video ini untuk menyertai Cabutan Bertuah Raya QV.</p>
-                        <iframe  src="https://www.youtube.com/embed/3_6-3ont4tg?autoplay=1&mute=1&enablejsapi=1" class="video_play" allow='autoplay'
+                        <iframe id="video" src="https://www.youtube.com/embed/3_6-3ont4tg?autoplay=1&mute=1&enablejsapi=1" class="video_play" allow='autoplay'
                         title="YouTube video player" frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen ></iframe>
@@ -65,8 +65,12 @@ if (isset($_POST['send'])) {
     setTimeout(function() {
         document.getElementById('submitButton').hidden = null;
     }, 34000);
-    var countdownNum = 8;
-    incTimer();
+
+    $(document).ready(function(){
+       $("#video").play();
+ 
+    });
+
     </script>
 
 </body>
