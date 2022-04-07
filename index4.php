@@ -20,9 +20,9 @@ include('include/header.php');
             <div class="row mt-md-4 mt-sm-3 group_div align-items-center justify-content-center" id="text2">        
               <img class="mx-3" src="assets/image/tube.png" alt="tube">        
               <div class="mx-3 text-center"  id="draggable" class="ui-widget-content">
-                <div class="card1 "  id="card1"></div> 
-                <div class="card2 " id="card2" ></div>  
-                <div class="card3 " id="card3" ></div>
+                <div class="card1 "  id="card1" ondragstart= dragStart(event)></div> 
+                <div class="card2 " id="card2" ondragstart= dragStart(event) ></div>  
+                <div class="card3 " id="card3"  ondragstart= dragStart(event)></div>
               </div>
               <div class="row align-items-center mx-3">          
                 <img class="mx-2 finger_image" src="assets/image/finger.png" alt="finger">                  
@@ -54,11 +54,11 @@ include('include/header.php');
             </p>          
           </div>
           <div class="mt-3 text-center d-flex justify-content-center align-items-center" style="height:40px" >    
-                <div class="card1 m-1 " id="m_card1"   
+                <div class="card1 m-1 " id="m_card1"   ondragstart= dragStart_mobile(event)
                         ></div> 
-                <div class="card2 m-1 " id="m_card2" 
+                <div class="card2 m-1 " id="m_card2" ondragstart= dragStart_mobile(event)
                        ></div>  
-                <div class="card3 m-1 " id="m_card3"  
+                <div class="card3 m-1 " id="m_card3"  ondragstart= dragStart_mobile(event)
                       ></div>
           </div>
           <div class="fit_content d-flex mt-5">
@@ -76,11 +76,12 @@ include('include/header.php');
               {
                   $('.card'+i).draggable({
                     revert: true,
-                    placeholder: true,
+                    placeholder: true,  
                     droptarget: '.mark' + i,
-                    // dragstart:function(evt, droptarget){
-                    //   $(droptarget).removeClass('bg_image');
-                    //   $(droptarget).addClass('select_image'); 
+                    // drag:function(evt, ui){
+                    //   console.log("dffdf");
+                      // $(droptarget).removeClass('bg_image');
+                      // $(droptarget).addClass('select_image'); 
                     // },
                     drop: function(evt, droptarget) {
                       $(droptarget).removeClass("bg_image");
@@ -95,13 +96,20 @@ include('include/header.php');
 
               });
 
-            // function dragStart(ev) { 
-            //   const card_id = ev.target.getAttribute('id');
-            //   const mark_id = "#mark" + card_id.slice(4);
-            //   $(mark_id).removeClass('bg_image');
-            //   $(mark_id).addClass('select_image'); 
-            //       return true;
-            // }
+            function dragStart(ev) { 
+              const card_id = ev.target.getAttribute('id');
+              const mark_id = ".mark" + card_id.slice(4);
+              $(mark_id).removeClass('bg_image');
+              $(mark_id).addClass('select_image'); 
+                  return true;
+            }
+            function dragStart_mobile(ev) { 
+              const card_id = ev.target.getAttribute('id');
+              const mark_id = ".mark" + card_id.slice(6);
+              $(mark_id).removeClass('bg_image');
+              $(mark_id).addClass('select_image'); 
+                  return true;
+            }
            
          </script>
 </body>
